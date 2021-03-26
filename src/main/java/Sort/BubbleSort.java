@@ -7,11 +7,7 @@ package Sort;
  **/
 public class BubbleSort {
     private int[] items;
-
-    public BubbleSort(int[] items) {
-        this.items = items;
-    }
-
+    public BubbleSort(int[] items) { this.items = items; }
     public void bubbleSort(){
         if (items.length <= 1) return;
         for (int i = 0; i < items.length; i++){
