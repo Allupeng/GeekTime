@@ -14,19 +14,14 @@ public class InsertionSort {
 
     public void insertionSort(){
     if (items.length <= 1) return;
-
     for (int i = 1 ; i < items.length ; i++){
         int value = items[i];
         for (int j = i - 1; j >= 0; j--){
             if (items[j] > value){
                 items[j+1] = items[j]; //向后移动
-            }else {
-                break;
-            }
+            }else { break; }
             items[j+1] = value; //插入到正确位置
         }
     }
-
     }
-
 }
